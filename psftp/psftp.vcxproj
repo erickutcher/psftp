@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{85FBB667-08A9-4654-AB53-11D249FB1871}</ProjectGuid>
+    <RootNamespace>psftp</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31025.104</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="callback.c" />
+    <ClCompile Include="ecc.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mainchan.c" />
+    <ClCompile Include="marshal.c" />
+    <ClCompile Include="memory.c" />
+    <ClCompile Include="miscucs.c" />
+    <ClCompile Include="mpint.c" />
+    <ClCompile Include="nettle\aes-encrypt-internal.c" />
+    <ClCompile Include="nettle\aes-encrypt-table.c" />
+    <ClCompile Include="nettle\aes-encrypt.c" />
+    <ClCompile Include="nettle\aes-set-encrypt-key.c" />
+    <ClCompile Include="nettle\aes-set-key-internal.c" />
+    <ClCompile Include="nettle\aes128-set-encrypt-key.c" />
+    <ClCompile Include="nettle\aes192-set-encrypt-key.c" />
+    <ClCompile Include="nettle\aes256-set-encrypt-key.c" />
+    <ClCompile Include="nettle\ctr.c" />
+    <ClCompile Include="nettle\ctr16.c" />
+    <ClCompile Include="nettle\gcm-aes.c" />
+    <ClCompile Include="nettle\gcm-aes128-meta.c" />
+    <ClCompile Include="nettle\gcm-aes128.c" />
+    <ClCompile Include="nettle\gcm-aes192-meta.c" />
+    <ClCompile Include="nettle\gcm-aes192.c" />
+    <ClCompile Include="nettle\gcm-aes256-meta.c" />
+    <ClCompile Include="nettle\gcm-aes256.c" />
+    <ClCompile Include="nettle\gcm.c" />
+    <ClCompile Include="nettle\memxor.c" />
+    <ClCompile Include="nettle\memxor3.c" />
+    <ClCompile Include="pgssapi.c" />
+    <ClCompile Include="pinger.c" />
+    <ClCompile Include="sftp.c" />
+    <ClCompile Include="sftpcommon.c" />
+    <ClCompile Include="ssh.c" />
+    <ClCompile Include="ssh2bpp.c" />
+    <ClCompile Include="ssh2connection-client.c" />
+    <ClCompile Include="ssh2connection.c" />
+    <ClCompile Include="ssh2kex-client.c" />
+    <ClCompile Include="ssh2transhk.c" />
+    <ClCompile Include="ssh2transport.c" />
+    <ClCompile Include="ssh2userauth.c" />
+    <ClCompile Include="sshaes.c" />
+    <ClCompile Include="ssharcf.c" />
+    <ClCompile Include="sshauxcrypt.c" />
+    <ClCompile Include="sshblowf.c" />
+    <ClCompile Include="sshccp.c" />
+    <ClCompile Include="sshcommon.c" />
+    <ClCompile Include="sshdes.c" />
+    <ClCompile Include="sshdh.c" />
+    <ClCompile Include="sshdss.c" />
+    <ClCompile Include="sshecc.c" />
+    <ClCompile Include="sshgssc.c" />
+    <ClCompile Include="sshhmac.c" />
+    <ClCompile Include="sshmac.c" />
+    <ClCompile Include="sshmd5.c" />
+    <ClCompile Include="sshprng.c" />
+    <ClCompile Include="sshpubk.c" />
+    <ClCompile Include="sshrand.c" />
+    <ClCompile Include="sshrsa.c" />
+    <ClCompile Include="sshsh256.c" />
+    <ClCompile Include="sshsh512.c" />
+    <ClCompile Include="sshsha.c" />
+    <ClCompile Include="sshverstring.c" />
+    <ClCompile Include="sshzlib.c" />
+    <ClCompile Include="timing.c" />
+    <ClCompile Include="tree234.c" />
+    <ClCompile Include="utils.c" />
+    <ClCompile Include="version.c" />
+    <ClCompile Include="wildcard.c" />
+    <ClCompile Include="wingss.c" />
+    <ClCompile Include="winmisc.c" />
+    <ClCompile Include="winmiscs.c" />
+    <ClCompile Include="winnoise.c" />
+    <ClCompile Include="winstore.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="ecc.h" />
+    <ClInclude Include="marshal.h" />
+    <ClInclude Include="misc.h" />
+    <ClInclude Include="mpint.h" />
+    <ClInclude Include="mpint_i.h" />
+    <ClInclude Include="nettle\aes-internal.h" />
+    <ClInclude Include="nettle\aes.h" />
+    <ClInclude Include="nettle\block-internal.h" />
+    <ClInclude Include="nettle\ctr-internal.h" />
+    <ClInclude Include="nettle\ctr.h" />
+    <ClInclude Include="nettle\gcm-internal.h" />
+    <ClInclude Include="nettle\gcm.h" />
+    <ClInclude Include="nettle\macros.h" />
+    <ClInclude Include="nettle\memxor-internal.h" />
+    <ClInclude Include="nettle\memxor.h" />
+    <ClInclude Include="nettle\nettle-internal.h" />
+    <ClInclude Include="nettle\nettle-meta.h" />
+    <ClInclude Include="nettle\nettle-types.h" />
+    <ClInclude Include="nettle\sha3.h" />
+    <ClInclude Include="pgssapi.h" />
+    <ClInclude Include="putty.h" />
+    <ClInclude Include="puttymem.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sftp.h" />
+    <ClInclude Include="ssh.h" />
+    <ClInclude Include="ssh2connection.h" />
+    <ClInclude Include="ssh2transport.h" />
+    <ClInclude Include="sshblowf.h" />
+    <ClInclude Include="sshbpp.h" />
+    <ClInclude Include="sshchan.h" />
+    <ClInclude Include="sshcr.h" />
+    <ClInclude Include="sshgss.h" />
+    <ClInclude Include="sshgssc.h" />
+    <ClInclude Include="sshppl.h" />
+    <ClInclude Include="sshsignals.h" />
+    <ClInclude Include="sshttymodes.h" />
+    <ClInclude Include="tree234.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="winstuff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="psftp.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
