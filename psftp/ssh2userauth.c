@@ -471,17 +471,9 @@ static void ssh2_userauth_process_queue( PacketProtocolLayer *ppl )
 					}
 					if ( key == SSH2_WRONG_PASSPHRASE || key == NULL )
 					{
-						if ( passphrase && ( key == SSH2_WRONG_PASSPHRASE ) )
-						{
-							key = NULL;
-							/* and loop again */
-						}
-						else
-						{
-							key = NULL;
-							s->suppress_wait_for_response_packet = true;
-							break; /* try something else */
-						}
+						key = NULL;
+						s->suppress_wait_for_response_packet = true;
+						break; /* try something else */
 					}
 					else
 					{
